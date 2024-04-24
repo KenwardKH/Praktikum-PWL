@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+
+}
+.hero{
+    background-image: url("../images/concert_bg.jpg");
+    min-height: 100vh;
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.container {
+    min-height: 40vh;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    border: 5px solid gold;
+    padding: 20px;
+    border-radius: 50px;
+}
+.top {
+    text-align: center;
+    font-size: 24px;
+}
+.form{
+    height: 275px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+input{
+    width: 100%;
+    height: 25px;
+    border-radius: 50px;
+    text-indent: 10px;
+}
+
+.input {
+    position: relative;
+}
+
+.input label {
+    align-items: center;
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    pointer-events: none;
+    transition: 0.3s ease all;
+    color: black; /* Placeholder color */
+}
+
+.input input:focus + label,
+.input input:not(:placeholder-shown) + label {
+    top: -18px;
+    font-size: 14px;
+    color: black; /* Color when focused */
+}
+
+.signup{
+    margin: 0 auto;
+    width: 100px;
+    border-radius: 50px;
+    background-color: yellow;
+    height: 35px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.login {
+    margin: 0 auto;
+    font-size: medium;
+}
+.login a {
+    color: white;
+}
